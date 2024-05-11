@@ -2,10 +2,10 @@
 # Пользователь вводит два числа: А и В. Реализуйте код,
 # который генерирует список из чётных чисел в диапазоне от А до B.
 # Используйте list comprehensions (как и в следующих задачах).
-import random
 
-# n = [i for i in range(10) if i % 2 == 0]
-# print(n)
+
+n = [i for i in range(10) if i % 2 == 0]
+print(n)
 
 ###############################################################################
 # Задача 2. Магазин
@@ -26,9 +26,9 @@ import random
 #
 # [1.25, 0, 10.22, 3.78, 0, 1.16]
 
-# original_prices = [1.25, -9.45, 10.22, 3.78, -5.92, 1.16]
-# duble_prices = [0 if i < 0 else i for i in original_prices]
-# print(duble_prices)
+original_prices = [1.25, -9.45, 10.22, 3.78, -5.92, 1.16]
+duble_prices = [0 if i < 0 else i for i in original_prices]
+print(duble_prices)
 #######################################################################################
 
 # Задача 3. Отряды
@@ -54,10 +54,11 @@ import random
 #
 # Состояние третьего отряда: ['Погиб', 'Погиб', 'Погиб', 'Погиб', 'Погиб',
 # 'Погиб', 'Выжил', 'Погиб', 'Погиб', 'Выжил']
+import random
 
-# squad_1 = [random.randint(50, 80) for i in range(10)]
-# print(squad_1)
-# squad_2 = [random.randint(30, 60) for j in range(10)]
-# print(squad_2)
-# squad_3 = [("Погиб" if squad_1[i] + squad_2[i] > 100 else "Выжил") for i in range(10)]
-# print(squad_3)
+squad_1 = [random.randint(50, 80) for i in range(10)]
+print(squad_1)
+squad_2 = [random.randint(30, 60) for j in range(10)]
+print(squad_2)
+squad_3 = [("Погиб" if squad_1[i] + squad_2[i] > 100 else "Выжил") for i in range(10)]
+print(squad_3)
