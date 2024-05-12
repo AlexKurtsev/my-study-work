@@ -1,0 +1,6 @@
+OS info is 
+uname_result(system='Linux', node='PK5480', release='6.5.0-27-generic',
+version='#28~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Mar 15 10:51:06 UTC 2',
+machine='x86_64')
+
+Python version is 3.12.2 (main, Feb 25 2024, 16:35:05) [GCC 11.4.0] ('64bit', 'ELF')
