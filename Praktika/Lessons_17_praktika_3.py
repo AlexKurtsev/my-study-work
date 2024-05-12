@@ -25,16 +25,16 @@
 # она выводит ответ 0, когда правильный ответ 14. Помогите другу исправить
 # программу, а также сделайте так, чтобы список цен генерировался случайно
 # (диапазон можно выбрать любой).
-# import random
-#
-# original_prices = [random.randint(-100, 100) for _ in range(5)]
-# print(original_prices)
-# new_prices = original_prices[:]
-# print(new_prices)
-# new_prices = [0 if i < 0 else i for i in original_prices]
-# print(new_prices)
-# print("Мы потеряли: ", sum(original_prices) - sum(new_prices))
 import random
+
+original_prices = [random.randint(-100, 100) for _ in range(5)]
+print(original_prices)
+new_prices = original_prices[:]
+print(new_prices)
+new_prices = [0 if i < 0 else i for i in original_prices]
+print(new_prices)
+print("Мы потеряли: ", sum(original_prices) - sum(new_prices))
+
 
 ###################################################################################
 
@@ -71,13 +71,13 @@ import random
 #
 # [12, 43, 50, 38, -10]
 
-# nums = [48, -10, 9, 38, 17, 50, -5, 43, 46, 12]
-# print(nums[:5])
-# print(nums[:-2])
-# print(nums[::2])
-# print(nums[1::2])
-# print(nums[::-1])
-# print(nums[::-2])
+nums = [48, -10, 9, 38, 17, 50, -5, 43, 46, 12]
+print(nums[:5])
+print(nums[:-2])
+print(nums[::2])
+print(nums[1::2])
+print(nums[::-1])
+print(nums[::-2])
 
 #################################################################################
 
@@ -86,6 +86,7 @@ import random
 # (можно сгенерировать случайно, при этом А < B).
 # Напишите программу, которая удаляет элементы списка с индексами от А до В.
 # Не используйте дополнительные переменные и методы списков.
+import random
 
 n = int(input("Введите количество чисел N: "))
 
