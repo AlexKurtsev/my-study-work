@@ -4,17 +4,16 @@ def add_lst_digits(num):
 
 num = int(input("Введите длину списка: "))
 print(f"\nРезультат: {add_lst_digits(num)}")
+
 ###########################################################################
 
 
 def change_numbers():
     print(
-        f'Результат: {
-        [
-            1 if i_num % 2 == 0 else i_num % 5
-            for i_num in range(int(input("Введите длину списка: ")))
-        ]
-    }'
+        f"Результат: {
+        [i_num % 5 if i_num % 2 != 0 
+        else 1 for i_num in range(int(input("Введите длину списка: ")))]
+        }"
     )
 
 
