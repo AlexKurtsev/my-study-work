@@ -13,6 +13,7 @@ print(
 )
 #####################################################################################
 
+
 def is_third_level(second_level):
     for third_level in second_level:
         new_list.append(third_level)
